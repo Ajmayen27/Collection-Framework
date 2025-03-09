@@ -16,3 +16,19 @@ get() – is always a constant time O(1) operation
 remove() – runs in linear O(n) time. We have to iterate the entire array to find the element qualifying for removal.
 indexOf() – also runs in linear time. It iterates through the internal array and checks each element one by one, so the time complexity for this operation always requires O(n) time.
 contains() – implementation is based on indexOf(), so it’ll also run in O(n) time.
+
+
+
+LinkedList:
+Linked list is a class that implements List and deque interface.The functionalit y and behaviour of the Linked list class is similar to ArrayList.
+main differences is their internal implemantation.ArrayList uses regular Array and Linked List uses actual Linked list as the internal implementation.
+
+*Implement List and Deque interface
+*Maintains insertion order
+*Dynamic size
+*Allows duplicates and any number of null values.
+*Cannot use premetive data types.
+*Best for manpulating data.
+
+Time Complexity: Traversal of a singly-linked list takes O(n) time, where 'n' is the number of nodes in the list. This is because you must visit each node one by one.
+Space Complexity: Traversal requires O(1) space, as you only need a few extra variables to keep track of your position.
