@@ -45,5 +45,10 @@ public class ArrayListClass {
         myArray.set(0,8);
         System.out.println(myArray);
 
+        Boolean isnumContain = myArray.contains(8);
+        Boolean isnumNotContain = myArray.contains(99);
+        System.out.println(isnumContain);
+        System.out.println(isnumNotContain);
+
     }
 }
