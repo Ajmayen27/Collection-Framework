@@ -44,3 +44,14 @@ accepted.
 *Allows no duplicate key,only one null key.
 *Can not use primitive data type(int,float,double,string)
 *Best for quickly retriving values based on particular key.
+
+Time Complexity:
+Average Case:
+Insertion (average): O(1)
+Lookup (average): O(1)
+Deletion (average): O(1)
+Worst Case:
+
+Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, 
+leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
+Lookup and Deletion (worst): O(n), for the same reason as insertion.
