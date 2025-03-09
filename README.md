@@ -32,3 +32,26 @@ main differences is their internal implemantation.ArrayList uses regular Array a
 
 Time Complexity: Traversal of a singly-linked list takes O(n) time, where 'n' is the number of nodes in the list. This is because you must visit each node one by one.
 Space Complexity: Traversal requires O(1) space, as you only need a few extra variables to keep track of your position.
+
+
+HashMap:
+Hashmap is class that implements Map interface. The functionality and behaviour is similar to map.Thats meana it doesnt allows anyb duplicate keys.And only one null key is
+accepted.
+
+*Implements map interface.
+*Doesn't maintain insertion order
+*Dynamic size
+*Allows no duplicate key,only one null key.
+*Can not use primitive data type(int,float,double,string)
+*Best for quickly retriving values based on particular key.
+
+Time Complexity:
+Average Case:
+Insertion (average): O(1)
+Lookup (average): O(1)
+Deletion (average): O(1)
+Worst Case:
+
+Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, 
+leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
+Lookup and Deletion (worst): O(n), for the same reason as insertion.
