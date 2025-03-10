@@ -79,3 +79,38 @@ remove() – Takes O(1) time on average; in the worst case, it can take O(n) tim
 containsKey() – Takes O(1) time on average; in the worst case, it can take O(n) time.
 
 Iteration – Takes O(n) time, where n is the number of elements in the map, because it follows the linked list structure to maintain order.
+
+
+TreeMap:
+TreeMap is a class that implements the NavigableMap interface and extends the AbstractMap class. The TreeMap class stores its elements in a red-black tree structure, which is a type of self-balancing binary search tree. This ensures that the elements are always sorted in a natural order (or according to a specified comparator). When an element is added, it is placed into the tree in its correct sorted position. If a key is re-inserted, its value is updated, but the sorting order remains intact.
+
+Implements NavigableMap interface
+
+Extends AbstractMap class
+
+Maintains elements in sorted order (natural order or custom order defined by a comparator)
+
+Internal data structure is a red-black tree
+
+Dynamic Size
+
+Does not allow null keys (if natural ordering or comparator is used) but allows multiple null values
+
+Does not allow duplicate keys, but allows duplicate values
+
+Cannot use primitive data types (e.g., int, float, double); must use their wrapper classes (e.g., Integer, Float, Double)
+
+Best for maintaining sorted order while providing efficient retrieval, insertion, and deletion
+
+Time Complexity:
+put() – Takes O(log n) time because it needs to maintain the balanced tree structure.
+
+get() – Takes O(log n) time as it searches the tree.
+
+remove() – Takes O(log n) time because it needs to rebalance the tree after removal.
+
+containsKey() – Takes O(log n) time as it searches the tree.
+
+Iteration – Takes O(n) time, where n is the number of elements in the map, because it traverses the tree in sorted order.
+
+
