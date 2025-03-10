@@ -55,3 +55,27 @@ Worst Case:
 Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, 
 leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
 Lookup and Deletion (worst): O(n), for the same reason as insertion.
+
+
+LinkedHashmap:
+LinkedHashMap is a class that implements the Map interface and extends the HashMap class. The LinkedHashMap class maintains a linked list of the entries in the map, in the order in which they were inserted. This allows for predictable iteration order, unlike HashMap, which does not guarantee any specific order. When an element is added, it is placed into the internal data structure while maintaining the insertion order. If a key is re-inserted, the insertion order is not affected.
+
+*Implements Map interface
+*Extends HashMap class
+*Maintains insertion order (or access order if configured)Internal data structure is a combination of a hash table and a doubly-linked list
+*Dynamic SizeAllows one null key and any number of null values
+*Does not allow duplicate keys, but allows duplicate values
+*Cannot use primitive data types (e.g., int, float, double); must use their wrapper classes (e.g., Integer, Float, Double)
+*Best for maintaining insertion order while providing fast access, insertion, and deletion
+
+
+Time Complexity:
+put() – Takes O(1) time on average; however, in the worst-case scenario (e.g., when resizing the internal hash table), it can take O(n) time.
+
+get() – Takes O(1) time on average; in the worst case (e.g., due to hash collisions), it can take O(n) time.
+
+remove() – Takes O(1) time on average; in the worst case, it can take O(n) time.
+
+containsKey() – Takes O(1) time on average; in the worst case, it can take O(n) time.
+
+Iteration – Takes O(n) time, where n is the number of elements in the map, because it follows the linked list structure to maintain order.
