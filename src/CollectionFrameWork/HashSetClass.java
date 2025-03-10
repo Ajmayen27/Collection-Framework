@@ -34,7 +34,7 @@ public class HashSetClass {
         HashSet<Integer> myHashSet = new HashSet<>(myArray);
         System.out.println("Size: "+myHashSet.size());
         System.out.println("Is the number Contain:"+myHashSet.contains(1));
-
+        myHashSet.remove(4);
 
         printHashSet(myHashSet);
 
