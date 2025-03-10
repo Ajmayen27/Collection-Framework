@@ -114,3 +114,35 @@ containsKey() – Takes O(log n) time as it searches the tree.
 Iteration – Takes O(n) time, where n is the number of elements in the map, because it traverses the tree in sorted order.
 
 
+
+HashSet:
+HashSet is a class that implements the Set interface and extends the AbstractSet class. The HashSet class uses a hash table (a HashMap instance) internally to store its elements. When an element is added, it is stored in the hash table based on its hash code. This allows for fast access, insertion, and deletion of elements. However, HashSet does not maintain any specific order of elements, and it does not allow duplicate values.
+
+Implements Set interface
+
+Extends AbstractSet class
+
+Does not maintain insertion order (elements are stored based on their hash codes)
+
+Internal data structure is a hash table (a HashMap instance)
+
+Dynamic Size
+
+Allows one null element
+
+Does not allow duplicate elements
+
+Cannot use primitive data types (e.g., int, float, double); must use their wrapper classes (e.g., Integer, Float, Double)
+
+Best for storing unique elements and performing fast lookups, insertions, and deletions
+
+Time Complexity:
+add() – Takes O(1) time on average; in the worst case (e.g., due to hash collisions), it can take O(n) time.
+
+remove() – Takes O(1) time on average; in the worst case, it can take O(n) time.
+
+contains() – Takes O(1) time on average; in the worst case, it can take O(n) time.
+
+Iteration – Takes O(n) time, where n is the number of elements in the set, because it iterates over all elements in the hash table.
+
+
