@@ -146,3 +146,37 @@ contains() – Takes O(1) time on average; in the worst case, it can take O(n) t
 Iteration – Takes O(n) time, where n is the number of elements in the set, because it iterates over all elements in the hash table.
 
 
+
+TreeSet:
+TreeSet is a class that implements the NavigableSet interface and extends the AbstractSet class. The TreeSet class stores its elements in a red-black tree structure, which is a type of self-balancing binary search tree. This ensures that the elements are always sorted in natural order (or according to a specified comparator). When an element is added, it is placed into the tree in its correct sorted position. If a duplicate element is added, it is ignored, as TreeSet does not allow duplicates.
+
+Implements NavigableSet interface
+
+Extends AbstractSet class
+
+Maintains elements in sorted order (natural order or custom order defined by a comparator)
+
+Internal data structure is a red-black tree
+
+Dynamic Size
+
+Does not allow null elements (if natural ordering or comparator is used)
+
+Does not allow duplicate elements
+
+Cannot use primitive data types (e.g., int, float, double); must use their wrapper classes (e.g., Integer, Float, Double)
+
+Best for maintaining sorted order while providing efficient retrieval, insertion, and deletion
+
+Time Complexity:
+add() – Takes O(log n) time because it needs to maintain the balanced tree structure.
+
+remove() – Takes O(log n) time because it needs to rebalance the tree after removal.
+
+contains() – Takes O(log n) time as it searches the tree.
+
+Iteration – Takes O(n) time, where n is the number of elements in the set, because it traverses the tree in sorted order.
+
+
+
+
